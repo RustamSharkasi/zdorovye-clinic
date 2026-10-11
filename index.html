@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Клиника Здоровье — семейная стоматология · имплантация, лечение, детская</title>
+<meta name="description" content="Клиника Здоровье — семейная стоматология полного цикла: лечение, имплантация, протезирование, брекеты, виниры и детский приём. Своя КТ-диагностика, честный план лечения. Демо-версия сайта.">
+<meta name="theme-color" content="#0B6E9F">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Клиника Здоровье — семейная стоматология">
+<meta property="og:description" content="Лечение, имплантация, протезирование, брекеты, виниры и детская стоматология. Своя КТ-диагностика. Концепт-проект.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<meta property="og:locale" content="ru_RU">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Days+One&family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=5">
+<script>document.documentElement.classList.add('js-on')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Клиника Здоровье",
+  "description": "Семейная стоматологическая клиника полного цикла: лечение, имплантация, протезирование, ортодонтия, эстетическая и детская стоматология, своя КТ-диагностика. Демо-версия сайта.",
+  "image": "assets/img/og-image.jpg",
+  "logo": "assets/img/apple-touch-icon.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Садовая, 24",
+    "addressCountry": "RU"
+  },
+  "openingHours": ["Mo-Sa 09:00-20:00", "Su 10:00-16:00"]
+}
+</script>
+</head>
+<body>
+
+<!-- ===== SVG ICON SPRITE ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- знак «Клиника Здоровье»: белый зуб, вокруг — голубой пояс-орбита; цвета через CSS-переменные -->
+    <symbol id="logo" viewBox="0 0 120 132">
+      <g transform="rotate(-12 60 72)"><path d="M4 72A56 15 0 0 1 116 72" fill="none" style="stroke:var(--mk-belt-back,#0E7BB0)" stroke-width="9" stroke-linecap="round"/></g>
+      <path d="M60 26C52 19 43 15 34 16 22 17 15 27 15 41c0 12 4 21 8 31 3 9 5 21 8 31 2 7 5 11 10 11 6 0 8-7 10-15 2-8 5-13 9-13s7 5 9 13c2 8 4 15 10 15 5 0 8-4 10-11 3-10 5-22 8-31 4-10 8-19 8-31 0-14-7-24-19-25-9-1-18 3-26 10z" style="fill:var(--mk-tooth,#fff);stroke:var(--mk-edge,#1FA6DE)" stroke-width="5" stroke-linejoin="round"/>
+      <g transform="rotate(-12 60 72)"><path d="M116 72A56 15 0 0 1 4 72" fill="none" style="stroke:var(--mk-belt,#1FA6DE)" stroke-width="9" stroke-linecap="round"/></g>
+    </symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M12 3.2c-1.9 0-2.9 1.1-4.6 1.1C5.2 4.3 3.7 5.8 3.7 9c0 3.6 1.3 6.4 2.3 10.2.4 1.5.9 2.6 1.8 2.6 1.1 0 1.3-2.4 2.1-4 .5-.9 1-1.4 2.1-1.4s1.6.5 2.1 1.4c.8 1.6 1 4 2.1 4 .9 0 1.4-1.1 1.8-2.6C21.1 15.4 22.3 12.6 22.3 9c0-3.2-1.5-4.7-3.7-4.7-1.7 0-2.7-1.1-4.6-1.1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-implant" viewBox="0 0 24 24"><path d="M12 2.5c-2.4 0-4.2 1.4-4.2 3.6 0 1.6 1 2.6 1.4 3.9h5.6c.4-1.3 1.4-2.3 1.4-3.9 0-2.2-1.8-3.6-4.2-3.6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.4 12h5.2M9.8 15h4.4M10.4 18h3.2M11.2 21h1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-braces" viewBox="0 0 24 24"><path d="M3 8.5v7M21 8.5v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="7" y="9.6" width="3.3" height="4.8" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13.7" y="9.6" width="3.3" height="4.8" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M18.5 15.5l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-child" viewBox="0 0 24 24"><circle cx="12" cy="6.4" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 20c0-3.6 2.4-6.2 5.5-6.2S17.5 16.4 17.5 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M9.5 20v-2M14.5 20v-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3.5 8l3.5 3 5-5.5 5 5.5 3.5-3-1.8 11H5.3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7.5 12h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 2.6v5.2c0 4.6-3 7.8-7 9.4-4-1.6-7-4.8-7-9.4V5.6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 20c0-3 2.5-5 5.5-5s5.5 2 5.5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16 5.5a3 3 0 0 1 0 5.6M17.5 20c0-2.4-.9-4.2-2.4-5.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.5 21 8l-9 4.5L3 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m3 12 9 4.5L21 12M3 16l9 4.5L21 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9.3C5 7.9 6.9 6 9.2 6c1.6 0 2.6.8 2.8 1.6C12.2 6.8 13.2 6 14.8 6 17.1 6 19 7.9 19 10.7c0 5-7 9.3-7 9.3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 4h3l1.4 4-2 1.4a11 11 0 0 0 5.2 5.2l1.4-2 4 1.4v3a1.6 1.6 0 0 1-1.7 1.6C11.8 19.6 4.4 12.2 4.9 5.7A1.6 1.6 0 0 1 6.5 4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 12 20a8 8 0 0 1-4-1.1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 9.2c.2-.7.5-.7.9-.7.3 0 .7 0 .9.6.2.6.6 1.5.6 1.6 0 .2 0 .4-.2.6-.2.2-.5.5-.3.9.3.6 1 1.3 1.8 1.6.3.1.5.1.7-.1.2-.2.5-.6.7-.5.6.2 1.5.6 1.6.7.1.1.1.6-.1 1.1s-1 .9-1.6.9c-1.4 0-3.4-1.1-4.6-3.2-.5-.9-.6-1.6-.5-2.3z" fill="currentColor"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M20.5 4.5 3.8 11c-.9.3-.9 1.6 0 1.9l4 1.3 1.6 4.6c.3.8 1.3.9 1.8.2l2.1-2.6 4 3c.6.4 1.5.1 1.7-.6l3-13c.2-.9-.6-1.6-1.5-1.3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8 13.8 8.5-5.3-6.6 6.1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 1.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21c4-4.2 6-7.2 6-10a6 6 0 0 0-12 0c0 2.8 2 5.8 6 10z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.6l5.9-.8z" fill="currentColor"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 13.5a4.5 4.5 0 0 0 8 0z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 9.5h.01M15 9.5h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M3.5 12S6.8 6 12 6c1.5 0 2.8.5 4 1.2M20.5 12S17.2 18 12 18c-1.5 0-2.8-.5-4-1.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10 10.2A2.6 2.6 0 0 0 13.8 14M4 20 20 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 11v5.2M12 7.8h.01" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-autoclave" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16.5 9.5v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3.5s6 6.4 6 10.6a6 6 0 0 1-12 0C6 9.9 12 3.5 12 3.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.2 14.5a2.9 2.9 0 0 0 2.6 2.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<!-- ===== HEADER ===== -->
+<header class="hdr" id="top">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top" aria-label="Клиника Здоровье — на главную">
+      <svg class="brand__mark" viewBox="0 0 120 132" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="brand__word" aria-hidden="true"><small>клиника</small>Здоровье</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#implant">Имплантация</a>
+      <a href="#doctors">Врачи</a>
+      <a href="#works">Работы</a>
+      <a href="#prices">Цены</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="hdr__act">
+      <a class="hdr__phone" href="#booking" data-demo="звонок">
+        <svg class="ic"><use href="#i-phone"/></svg>
+        <span>+7 (800) 000-00-00</span>
+      </a>
+      <a class="btn btn--sm" href="#booking">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <svg class="ic"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-scrim" id="navScrim" hidden></div>
+
+<main>
+
+<!-- ===== HERO: сцена логотипа + оффер ===== -->
+<section class="hero" id="hero">
+  <canvas class="hero__light" aria-hidden="true"></canvas>
+  <div class="wrap hero__in">
+    <div class="bs" role="img" aria-label="Логотип «Клиника Здоровье»: белый зуб в голубом поясе — стоматология для всей семьи">
+      <span class="bs__halo" aria-hidden="true"></span>
+      <div class="bs__mark">
+        <div class="bs__float">
+          <div class="bs__tilt">
+            <svg class="bs__svg" viewBox="0 0 120 132" aria-hidden="true">
+              <defs>
+                <linearGradient id="bsE" x1=".2" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#F3F9FD"/><stop offset="1" stop-color="#C9E3F1"/></linearGradient>
+                <radialGradient id="bsH" cx=".34" cy=".26" r=".42"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+                <linearGradient id="bsD" x1="0" y1="0" x2="1" y2="0"><stop offset=".5" stop-color="#8FC4DF" stop-opacity="0"/><stop offset="1" stop-color="#8FC4DF" stop-opacity=".55"/></linearGradient>
+                <linearGradient id="bsB" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0B6E9F"/><stop offset=".35" stop-color="#1FA6DE"/><stop offset=".7" stop-color="#5CC8F0"/><stop offset="1" stop-color="#0E7BB0"/></linearGradient>
+                <linearGradient id="bsK" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0B5C85"/><stop offset="1" stop-color="#1588BF"/></linearGradient>
+                <linearGradient id="bsS" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+                <path id="bsP" d="M60 26C52 19 43 15 34 16 22 17 15 27 15 41c0 12 4 21 8 31 3 9 5 21 8 31 2 7 5 11 10 11 6 0 8-7 10-15 2-8 5-13 9-13s7 5 9 13c2 8 4 15 10 15 5 0 8-4 10-11 3-10 5-22 8-31 4-10 8-19 8-31 0-14-7-24-19-25-9-1-18 3-26 10z"/>
+                <clipPath id="bsC"><use href="#bsP"/></clipPath>
+              </defs>
+              <g transform="rotate(-12 60 72)"><path d="M4 72A56 15 0 0 1 116 72" fill="none" stroke="url(#bsK)" stroke-width="7" stroke-linecap="round"/></g>
+              <use href="#bsP" fill="url(#bsE)"/>
+              <g clip-path="url(#bsC)">
+                <rect width="120" height="132" fill="url(#bsD)"/>
+                <ellipse cx="42" cy="40" rx="26" ry="22" fill="url(#bsH)"/>
+                <g transform="rotate(-12 60 72)"><path d="M116 76A56 15 0 0 1 4 76" fill="none" stroke="#0B4C6B" stroke-opacity=".16" stroke-width="7"/></g>
+                <rect class="bs__sheen" x="-40" y="-10" width="24" height="160" fill="url(#bsS)"/>
+              </g>
+              <use href="#bsP" fill="none" stroke="#BCDDEE" stroke-width="1.2"/>
+              <g transform="rotate(-12 60 72)">
+                <path d="M116 72A56 15 0 0 1 4 72" fill="none" stroke="url(#bsB)" stroke-width="7" stroke-linecap="round"/>
+                <path d="M108 78A52 12 0 0 1 14 78" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.3" stroke-linecap="round"/>
+                <path class="bs__glint" d="M116 72A56 15 0 0 1 4 72" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" pathLength="100"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="bs__water" aria-hidden="true">
+        <span class="bs__pool"></span>
+        <span class="bs__shadow"></span>
+        <span class="bs__ring"></span><span class="bs__ring"></span><span class="bs__ring"></span>
+      </div>
+      <span class="bs__word" aria-hidden="true"><small>клиника</small>Здоровье</span>
+      <span class="bs__tag" aria-hidden="true">Стоматология для всей семьи</span>
+    </div>
+
+    <div class="hero__copy">
+      <h1 class="hero__title">
+        <span class="sr-only">Здоровая улыбка для всей семьи — без страха и боли</span>
+        <span class="rotator" aria-hidden="true">
+          <span class="rotator__word">Здоровая&nbsp;улыбка</span>
+        </span>
+        <span class="hero__fixed" aria-hidden="true">для всей семьи —<br><span class="accent-blue">без страха и&nbsp;боли</span></span>
+      </h1>
+      <p class="hero__lead">Лечение, имплантация, протезирование, брекеты, виниры и детская стоматология — в одной клинике со своей КТ-диагностикой. Смету вы видите до начала лечения, и она не меняется.</p>
+      <div class="hero__cta">
+        <a class="btn btn--lg" href="#booking">Записаться на консультацию</a>
+        <a class="btn btn--ghost btn--lg" href="#booking" data-demo="WhatsApp">
+          <svg class="ic"><use href="#i-whatsapp"/></svg> Написать в WhatsApp
+        </a>
+      </div>
+      <ul class="trust">
+        <li><strong>12 лет</strong><span>лечим семьи с&nbsp;2014&nbsp;года</span></li>
+        <li><strong>4.9 ★</strong><span>средняя оценка по&nbsp;214 отзывам</span></li>
+        <li><strong>Своя КТ</strong><span>снимок за 10 минут, прямо в&nbsp;клинике</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,90 480,90 720,55 C960,20 1200,20 1440,55 L1440,90 L0,90 Z"/></svg></div>
+</section>
+
+<!-- ===== SERVICES (bento) ===== -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>Помогаем сохранить и&nbsp;восстановить здоровье зубов</h2>
+      <p>Полный спектр стоматологии для взрослых и детей. Выберите направление — подробно расскажем на консультации.</p>
+    </header>
+    <div class="bento">
+      <a class="svc svc--feature" href="#implant">
+        <div class="svc__ic"><svg class="ic"><use href="#i-implant"/></svg></div>
+        <h3>Имплантация зубов</h3>
+        <p>Восстановим один зуб или всю челюсть на имплантах (All-on-4/6). Диагностика на своей КТ, цифровой план и точная установка по шаблону.</p>
+        <span class="svc__price">от 35 000 ₽ за имплант</span>
+        <span class="svc__more">Подробнее <svg class="ic"><use href="#i-arrow"/></svg></span>
+      </a>
+      <a class="svc" href="#booking">
+        <div class="svc__ic"><svg class="ic"><use href="#i-tooth"/></svg></div>
+        <h3>Лечение зубов</h3>
+        <p>Кариес, пульпит, периодонтит, лечение каналов под микроскопом и реставрация.</p>
+        <span class="svc__price">от 5 500 ₽</span>
+      </a>
+      <a class="svc" href="#booking">
+        <div class="svc__ic"><svg class="ic"><use href="#i-crown"/></svg></div>
+        <h3>Протезирование</h3>
+        <p>Коронки из диоксида циркония, мосты, съёмные протезы и протезы на имплантах.</p>
+        <span class="svc__price">от 18 000 ₽</span>
+      </a>
+      <a class="svc" href="#booking">
+        <div class="svc__ic"><svg class="ic"><use href="#i-braces"/></svg></div>
+        <h3>Ортодонтия</h3>
+        <p>Брекеты и элайнеры для детей и взрослых — ровные зубы и правильный прикус.</p>
+        <span class="svc__price">от 60 000 ₽</span>
+      </a>
+      <a class="svc" href="#booking">
+        <div class="svc__ic"><svg class="ic"><use href="#i-sparkle"/></svg></div>
+        <h3>Эстетика</h3>
+        <p>Керамические виниры, отбеливание и художественная реставрация улыбки.</p>
+        <span class="svc__price">от 22 000 ₽</span>
+      </a>
+      <a class="svc svc--kids" href="#booking">
+        <div class="svc__ic"><svg class="ic"><use href="#i-child"/></svg></div>
+        <h3>Детская стоматология</h3>
+        <p>Лечение без слёз и профилактика. Первый визит — знакомство без бормашины: ребёнок привыкает к кабинету и врачу.</p>
+        <span class="svc__more">Записать ребёнка <svg class="ic"><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMPLANT ACCENT + QUIZ ===== -->
+<section class="sec implant" id="implant">
+  <div class="wrap implant__in">
+    <div class="implant__copy reveal">
+      <h2>Вернуть полноценную улыбку — <span class="accent-green">за&nbsp;один план лечения</span></h2>
+      <p class="implant__lead">Имплантация — это не «вставить зуб». Это диагностика, точное планирование и результат, который служит годами. В «Здоровье» весь путь проходит под одной крышей, со своей КТ.</p>
+      <ol class="steps-flow">
+        <li><span>1</span>Консультация и КТ</li>
+        <li><span>2</span>Цифровой план</li>
+        <li><span>3</span>Установка импланта</li>
+        <li><span>4</span>Коронка или протез</li>
+      </ol>
+      <div class="implant__tags">
+        <span class="tag"><svg class="ic"><use href="#i-check"/></svg> All-on-4 / All-on-6</span>
+        <span class="tag"><svg class="ic"><use href="#i-check"/></svg> Рассрочка 0% до 12 месяцев</span>
+        <span class="tag"><svg class="ic"><use href="#i-check"/></svg> Пожизненная гарантия на импланты</span>
+      </div>
+    </div>
+
+    <!-- Quiz / calculator -->
+    <div class="quiz reveal" id="quiz" data-step="1">
+      <div class="quiz__top">
+        <span class="quiz__title">Расчёт стоимости за 1 минуту</span>
+        <span class="quiz__count" id="quizCount">Шаг 1 из 3</span>
+      </div>
+      <div class="quiz__bar"><span id="quizBar" style="transform:scaleX(.334)"></span></div>
+      <form class="quiz__body" id="quizForm" novalidate>
+        <fieldset class="quiz__step is-active" data-q="1">
+          <legend>Сколько зубов нужно восстановить?</legend>
+          <div class="quiz__opts">
+            <button type="button" class="chip" data-next>1 зуб</button>
+            <button type="button" class="chip" data-next>2–3 зуба</button>
+            <button type="button" class="chip" data-next>Больше 3</button>
+            <button type="button" class="chip" data-next>Все зубы (челюсть)</button>
+          </div>
+        </fieldset>
+        <fieldset class="quiz__step" data-q="2">
+          <legend>Как давно нет зуба (зубов)?</legend>
+          <div class="quiz__opts">
+            <button type="button" class="chip" data-next>Недавно</button>
+            <button type="button" class="chip" data-next>Несколько месяцев</button>
+            <button type="button" class="chip" data-next>Больше года</button>
+            <button type="button" class="chip" data-next>Не знаю</button>
+          </div>
+          <button type="button" class="quiz__back" data-back><svg class="ic"><use href="#i-arrow"/></svg> Назад</button>
+        </fieldset>
+        <fieldset class="quiz__step" data-q="3">
+          <legend>Куда прислать расчёт и план?</legend>
+          <p class="quiz__hint">Врач посмотрит ответы и пришлёт подходящее решение с вилкой цены. Без спама.</p>
+          <div class="fld">
+            <input type="tel" name="phone" inputmode="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel" aria-label="Ваш телефон" data-phone>
+            <span class="fld__err" role="alert">Введите номер полностью — 10 цифр после +7</span>
+          </div>
+          <button type="submit" class="btn btn--lg btn--block">Получить расчёт стоимости</button>
+          <label class="consent"><input type="checkbox" required> <span>Согласен на обработку персональных данных</span></label>
+          <button type="button" class="quiz__back" data-back><svg class="ic"><use href="#i-arrow"/></svg> Назад</button>
+        </fieldset>
+        <div class="quiz__done" id="quizDone" hidden>
+          <div class="quiz__done-ic"><svg class="ic"><use href="#i-check"/></svg></div>
+          <b>Спасибо! Заявка принята.</b>
+          <p>Администратор свяжется с вами в рабочее время.</p>
+          <p class="demo-hint"><svg class="ic"><use href="#i-info"/></svg> Демо-версия: данные никуда не отправляются.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US (фасад клиники + причины) ===== -->
+<section class="sec why" id="why">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>Почему выбирают «Здоровье»</h2>
+      <p>Заботимся не только о зубах — о том, чтобы вам было спокойно и понятно на каждом приёме.</p>
+    </header>
+    <div class="why__grid">
+      <figure class="facade">
+        <div class="facade__frame">
+          <picture>
+            <source type="image/webp" srcset="assets/img/facade-900.webp 900w, assets/img/facade.webp 1475w" sizes="(max-width:1000px) 92vw, 440px">
+            <img src="assets/img/facade.jpg" alt="Здание клиники — фотография намеренно размыта" width="1475" height="1066" loading="lazy" decoding="async">
+          </picture>
+          <span class="veil" aria-hidden="true"></span>
+          <span class="nda"><svg class="ic"><use href="#i-eye-off"/></svg> Фото скрыто · демо</span>
+        </div>
+        <div class="facade__chip">
+          <span class="facade__chip-rate">4.9&nbsp;★</span>
+          <span>214 отзывов пациентов</span>
+        </div>
+        <figcaption>
+          <a class="facade__badge" href="#contacts">
+            <svg class="ic"><use href="#i-pin"/></svg>
+            <span>ул. Садовая, 24<br><b>своё здание, парковка</b></span>
+          </a>
+        </figcaption>
+      </figure>
+      <article class="why__card why__card--wide">
+        <div class="svc__ic"><svg class="ic"><use href="#i-layers"/></svg></div>
+        <h3>Полный цикл под одной крышей</h3>
+        <p>Диагностика, лечение, хирургия, имплантация и протезирование в одном месте — не нужно ездить по разным клиникам и врачам.</p>
+      </article>
+      <article class="why__card">
+        <div class="svc__ic"><svg class="ic"><use href="#i-scan"/></svg></div>
+        <h3>Своя диагностика</h3>
+        <p>Рентген и КТ прямо в клинике — точный диагноз и план без лишних поездок.</p>
+      </article>
+      <article class="why__card">
+        <div class="svc__ic"><svg class="ic"><use href="#i-users"/></svg></div>
+        <h3>Врачи разных направлений</h3>
+        <p>Терапевт, хирург, ортопед, ортодонт, детский врач — команда под вашу задачу.</p>
+      </article>
+      <article class="why__card why__card--wide why__card--accent">
+        <div class="svc__ic"><svg class="ic"><use href="#i-heart"/></svg></div>
+        <h3>Для взрослых и детей</h3>
+        <p>От первого визита малыша до сложного лечения у взрослого — по-семейному внимательно.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOCTORS ===== -->
+<section class="sec" id="doctors">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>Наши врачи</h2>
+      <p>Познакомьтесь с командой заранее — так спокойнее прийти на первый приём.</p>
+    </header>
+    <div class="docs" role="list">
+      <article class="doc" role="listitem">
+        <div class="doc__ava" aria-hidden="true"><span>АС</span></div>
+        <h3>Анна Соколова</h3>
+        <span class="doc__spec">Главный врач · терапевт</span>
+        <p class="doc__about">Лечение каналов под микроскопом, художественная реставрация.</p>
+        <span class="doc__exp"><b>16</b> лет практики</span>
+      </article>
+      <article class="doc" role="listitem">
+        <div class="doc__ava doc__ava--2" aria-hidden="true"><span>ИН</span></div>
+        <h3>Игорь Нестеров</h3>
+        <span class="doc__spec">Хирург-имплантолог</span>
+        <p class="doc__about">All-on-4, костная пластика, синус-лифтинг, навигационная хирургия.</p>
+        <span class="doc__exp"><b>12</b> лет практики</span>
+      </article>
+      <article class="doc" role="listitem">
+        <div class="doc__ava doc__ava--3" aria-hidden="true"><span>МБ</span></div>
+        <h3>Мария Белова</h3>
+        <span class="doc__spec">Ортодонт</span>
+        <p class="doc__about">Брекет-системы и элайнеры для подростков и взрослых.</p>
+        <span class="doc__exp"><b>9</b> лет практики</span>
+      </article>
+      <article class="doc" role="listitem">
+        <div class="doc__ava doc__ava--4" aria-hidden="true"><span>ОЛ</span></div>
+        <h3>Ольга Лебедева</h3>
+        <span class="doc__spec">Детский стоматолог</span>
+        <p class="doc__about">Адаптационные визиты, лечение молочных зубов, профилактика.</p>
+        <span class="doc__exp"><b>11</b> лет практики</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WORKS (before/after) ===== -->
+<section class="sec works" id="works">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>Результаты лечения</h2>
+      <p>Потяните ползунок, чтобы сравнить «до» и «после». Это иллюстрации типичных случаев — снимки пациентов показываем на консультации.</p>
+    </header>
+    <div class="works__filters" role="group" aria-label="Фильтр работ">
+      <button class="fltr is-on" data-filter="all" aria-pressed="true">Все</button>
+      <button class="fltr" data-filter="implant" aria-pressed="false">Имплантация</button>
+      <button class="fltr" data-filter="esthetic" aria-pressed="false">Эстетика</button>
+      <button class="fltr" data-filter="prosth" aria-pressed="false">Протезирование</button>
+    </div>
+    <div class="works__grid" id="worksGrid">
+      <figure class="ba" data-cat="implant">
+        <div class="ba__stage">
+          <div class="ba__after"><svg class="ba__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="implantAm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B2433"/><stop offset="1" stop-color="#2A0F17"/></linearGradient><linearGradient id="implantAg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7B9C1"/><stop offset=".75" stop-color="#E98E9C"/><stop offset="1" stop-color="#DD7B8B"/></linearGradient><linearGradient id="implantAe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCEBF3"/></linearGradient><linearGradient id="implantAl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCEBF3"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient></defs><rect width="400" height="300" fill="url(#implantAm)"/><path d="M56.5,300 L56.5,231.7 C56.5,220.7 60.5,217.7 71.5,217.7 C82.5,217.7 86.5,220.7 86.5,231.7 L86.5,300 Z" fill="url(#implantAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M89.5,300 L89.5,221.9 C89.5,210.9 93.5,207.9 106.5,207.9 C119.5,207.9 123.5,210.9 123.5,221.9 L123.5,300 Z" fill="url(#implantAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M126.5,300 L126.5,214.1 C126.5,203.1 130.5,200.1 144.5,200.1 C158.5,200.1 162.5,203.1 162.5,214.1 L162.5,300 Z" fill="url(#implantAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M165.5,300 L165.5,209.1 C165.5,198.1 169.5,195.1 183.5,195.1 C197.5,195.1 201.5,198.1 201.5,209.1 L201.5,300 Z" fill="url(#implantAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M204.5,300 L204.5,209.1 C204.5,198.1 208.5,195.1 222.5,195.1 C236.5,195.1 240.5,198.1 240.5,209.1 L240.5,300 Z" fill="url(#implantAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M243.5,300 L243.5,214.1 C243.5,203.1 247.5,200.1 261.5,200.1 C275.5,200.1 279.5,203.1 279.5,214.1 L279.5,300 Z" fill="url(#implantAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M282.5,300 L282.5,221.9 C282.5,210.9 286.5,207.9 299.5,207.9 C312.5,207.9 316.5,210.9 316.5,221.9 L316.5,300 Z" fill="url(#implantAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M319.5,300 L319.5,231.7 C319.5,220.7 323.5,217.7 334.5,217.7 C345.5,217.7 349.5,220.7 349.5,231.7 L349.5,300 Z" fill="url(#implantAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M0,300 L0,276 Q27.0,296 55.0,276 Q71.5,296 88.0,276 Q106.5,296 125.0,276 Q144.5,296 164.0,276 Q183.5,296 203.0,276 Q222.5,296 242.0,276 Q261.5,296 281.0,276 Q299.5,296 318.0,276 Q334.5,296 351.0,276 Q379.0,296 407.0,276 L400,276 L400,300 Z" fill="url(#implantAg)"/><path d="M9.5,58 L8.5,111.0 C7.5,166.0 14.7,172.0 25.5,172.0 C36.3,172.0 43.5,166.0 42.5,111.0 L41.5,58 Z" fill="url(#implantAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="20.5" cy="110.5" rx="4.7" ry="25.4" fill="#fff" opacity=".85"/><path d="M48.5,58 L47.5,128.4 C46.5,171.0 60.6,190.0 68.5,194.0 C76.4,190.0 90.5,171.0 89.5,128.4 L88.5,58 Z" fill="url(#implantAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="62.3" cy="119.8" rx="5.7" ry="30.7" fill="#fff" opacity=".85"/><path d="M95.5,58 L94.0,128.8 C93.5,176.0 97.1,184.0 107.0,184.0 L125.0,184.0 C134.9,184.0 138.5,176.0 138.0,128.8 L136.5,58 Z" fill="url(#implantAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="109.7" cy="115.6" rx="5.9" ry="28.3" fill="#fff" opacity=".85"/><path d="M143.5,58 L142.0,140.8 C141.5,196.0 146.1,204.0 158.6,204.0 L181.4,204.0 C193.9,204.0 198.5,196.0 198.0,140.8 L196.5,58 Z" fill="url(#implantAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="162.0" cy="124.0" rx="7.4" ry="33.1" fill="#fff" opacity=".85"/><path d="M203.5,58 L202.0,140.8 C201.5,196.0 206.1,204.0 218.6,204.0 L241.4,204.0 C253.9,204.0 258.5,196.0 258.0,140.8 L256.5,58 Z" fill="url(#implantAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="222.0" cy="124.0" rx="7.4" ry="33.1" fill="#fff" opacity=".85"/><path d="M263.5,58 L262.0,128.8 C261.5,176.0 265.1,184.0 275.0,184.0 L293.0,184.0 C302.9,184.0 306.5,176.0 306.0,128.8 L304.5,58 Z" fill="url(#implantAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="277.7" cy="115.6" rx="5.9" ry="28.3" fill="#fff" opacity=".85"/><path d="M311.5,58 L310.5,128.4 C309.5,171.0 323.6,190.0 331.5,194.0 C339.4,190.0 353.5,171.0 352.5,128.4 L351.5,58 Z" fill="url(#implantAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="325.3" cy="119.8" rx="5.7" ry="30.7" fill="#fff" opacity=".85"/><path d="M358.5,58 L357.5,111.0 C356.5,166.0 363.7,172.0 374.5,172.0 C385.3,172.0 392.5,166.0 391.5,111.0 L390.5,58 Z" fill="url(#implantAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="369.5" cy="110.5" rx="4.7" ry="25.4" fill="#fff" opacity=".85"/><path d="M0,0 L400,0 L400,76 L394.0,78 C388.2,60 360.8,60 355.0,78 L355.0,78 C348.2,60 314.8,60 308.0,78 L308.0,78 C301.1,60 266.9,60 260.0,78 L260.0,78 C251.7,60 208.3,60 200.0,78 L200.0,78 C191.7,60 148.3,60 140.0,78 L140.0,78 C133.1,60 98.9,60 92.0,78 L92.0,78 C85.2,60 51.8,60 45.0,78 L45.0,78 C39.2,60 11.8,60 6.0,78 L0,76 Z" fill="url(#implantAg)"/><path d="M0,36 Q200.0,20 400,36" stroke="#fff" stroke-opacity=".22" stroke-width="10" fill="none" stroke-linecap="round"/></svg><span>После</span></div>
+          <div class="ba__before"><svg class="ba__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="implantBm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B2433"/><stop offset="1" stop-color="#2A0F17"/></linearGradient><linearGradient id="implantBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7B9C1"/><stop offset=".75" stop-color="#E98E9C"/><stop offset="1" stop-color="#DD7B8B"/></linearGradient><linearGradient id="implantBe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3E6C8"/><stop offset="1" stop-color="#D9C397"/></linearGradient><linearGradient id="implantBl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9C397"/><stop offset="1" stop-color="#F3E6C8"/></linearGradient></defs><rect width="400" height="300" fill="url(#implantBm)"/><path d="M56.5,300 L56.5,231.7 C56.5,220.7 60.5,217.7 71.5,217.7 C82.5,217.7 86.5,220.7 86.5,231.7 L86.5,300 Z" fill="url(#implantBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M89.5,300 L89.5,221.9 C89.5,210.9 93.5,207.9 106.5,207.9 C119.5,207.9 123.5,210.9 123.5,221.9 L123.5,300 Z" fill="url(#implantBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M126.5,300 L126.5,214.1 C126.5,203.1 130.5,200.1 144.5,200.1 C158.5,200.1 162.5,203.1 162.5,214.1 L162.5,300 Z" fill="url(#implantBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M165.5,300 L165.5,209.1 C165.5,198.1 169.5,195.1 183.5,195.1 C197.5,195.1 201.5,198.1 201.5,209.1 L201.5,300 Z" fill="url(#implantBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M204.5,300 L204.5,209.1 C204.5,198.1 208.5,195.1 222.5,195.1 C236.5,195.1 240.5,198.1 240.5,209.1 L240.5,300 Z" fill="url(#implantBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M243.5,300 L243.5,214.1 C243.5,203.1 247.5,200.1 261.5,200.1 C275.5,200.1 279.5,203.1 279.5,214.1 L279.5,300 Z" fill="url(#implantBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M282.5,300 L282.5,221.9 C282.5,210.9 286.5,207.9 299.5,207.9 C312.5,207.9 316.5,210.9 316.5,221.9 L316.5,300 Z" fill="url(#implantBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M319.5,300 L319.5,231.7 C319.5,220.7 323.5,217.7 334.5,217.7 C345.5,217.7 349.5,220.7 349.5,231.7 L349.5,300 Z" fill="url(#implantBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M0,300 L0,276 Q27.0,296 55.0,276 Q71.5,296 88.0,276 Q106.5,296 125.0,276 Q144.5,296 164.0,276 Q183.5,296 203.0,276 Q222.5,296 242.0,276 Q261.5,296 281.0,276 Q299.5,296 318.0,276 Q334.5,296 351.0,276 Q379.0,296 407.0,276 L400,276 L400,300 Z" fill="url(#implantBg)"/><path d="M9.5,58 L8.5,111.0 C7.5,166.0 14.7,172.0 25.5,172.0 C36.3,172.0 43.5,166.0 42.5,111.0 L41.5,58 Z" fill="url(#implantBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="20.5" cy="110.5" rx="3.6" ry="19.1" fill="#fff" opacity=".35"/><path d="M48.5,58 L47.5,128.4 C46.5,171.0 60.6,190.0 68.5,194.0 C76.4,190.0 90.5,171.0 89.5,128.4 L88.5,58 Z" fill="url(#implantBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="62.3" cy="119.8" rx="4.4" ry="23.0" fill="#fff" opacity=".35"/><path d="M95.5,58 L94.0,128.8 C93.5,176.0 97.1,184.0 107.0,184.0 L125.0,184.0 C134.9,184.0 138.5,176.0 138.0,128.8 L136.5,58 Z" fill="#E8D7AE" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="109.7" cy="115.6" rx="4.5" ry="21.2" fill="#fff" opacity=".35"/><path d="M143.5,58 L142.0,140.8 C141.5,196.0 146.1,204.0 158.6,204.0 L181.4,204.0 C193.9,204.0 198.5,196.0 198.0,140.8 L196.5,58 Z" fill="url(#implantBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="162.0" cy="124.0" rx="5.7" ry="24.8" fill="#fff" opacity=".35"/><path d="M263.5,58 L262.0,128.8 C261.5,176.0 265.1,184.0 275.0,184.0 L293.0,184.0 C302.9,184.0 306.5,176.0 306.0,128.8 L304.5,58 Z" fill="url(#implantBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="277.7" cy="115.6" rx="4.5" ry="21.2" fill="#fff" opacity=".35"/><path d="M311.5,58 L310.5,128.4 C309.5,171.0 323.6,190.0 331.5,194.0 C339.4,190.0 353.5,171.0 352.5,128.4 L351.5,58 Z" fill="url(#implantBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="325.3" cy="119.8" rx="4.4" ry="23.0" fill="#fff" opacity=".35"/><path d="M358.5,58 L357.5,111.0 C356.5,166.0 363.7,172.0 374.5,172.0 C385.3,172.0 392.5,166.0 391.5,111.0 L390.5,58 Z" fill="url(#implantBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="369.5" cy="110.5" rx="3.6" ry="19.1" fill="#fff" opacity=".35"/><path d="M0,0 L400,0 L400,76 L394.0,78 C388.2,60 360.8,60 355.0,78 L355.0,78 C348.2,60 314.8,60 308.0,78 L308.0,78 C301.1,60 266.9,60 260.0,78 L260.0,78 C258.5,96 201.5,96 200.0,78 L200.0,78 C191.7,60 148.3,60 140.0,78 L140.0,78 C133.1,60 98.9,60 92.0,78 L92.0,78 C85.2,60 51.8,60 45.0,78 L45.0,78 C39.2,60 11.8,60 6.0,78 L0,76 Z" fill="url(#implantBg)"/><path d="M0,36 Q200.0,20 400,36" stroke="#fff" stroke-opacity=".22" stroke-width="10" fill="none" stroke-linecap="round"/></svg><span>До</span></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Сравнение до и после: имплантация центрального резца">
+          <span class="ba__handle" aria-hidden="true"><span class="ba__knob"><svg class="ic"><use href="#i-arrow"/></svg><svg class="ic"><use href="#i-arrow"/></svg></span></span>
+        </div>
+        <figcaption><b>Имплантация резца</b><span>Имплант + коронка из циркония · 3 месяца</span></figcaption>
+      </figure>
+      <figure class="ba" data-cat="esthetic">
+        <div class="ba__stage">
+          <div class="ba__after"><svg class="ba__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="estheticAm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B2433"/><stop offset="1" stop-color="#2A0F17"/></linearGradient><linearGradient id="estheticAg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7B9C1"/><stop offset=".75" stop-color="#E98E9C"/><stop offset="1" stop-color="#DD7B8B"/></linearGradient><linearGradient id="estheticAe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCEBF3"/></linearGradient><linearGradient id="estheticAl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCEBF3"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient></defs><rect width="400" height="300" fill="url(#estheticAm)"/><path d="M56.5,300 L56.5,231.7 C56.5,220.7 60.5,217.7 71.5,217.7 C82.5,217.7 86.5,220.7 86.5,231.7 L86.5,300 Z" fill="url(#estheticAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M89.5,300 L89.5,221.9 C89.5,210.9 93.5,207.9 106.5,207.9 C119.5,207.9 123.5,210.9 123.5,221.9 L123.5,300 Z" fill="url(#estheticAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M126.5,300 L126.5,214.1 C126.5,203.1 130.5,200.1 144.5,200.1 C158.5,200.1 162.5,203.1 162.5,214.1 L162.5,300 Z" fill="url(#estheticAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M165.5,300 L165.5,209.1 C165.5,198.1 169.5,195.1 183.5,195.1 C197.5,195.1 201.5,198.1 201.5,209.1 L201.5,300 Z" fill="url(#estheticAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M204.5,300 L204.5,209.1 C204.5,198.1 208.5,195.1 222.5,195.1 C236.5,195.1 240.5,198.1 240.5,209.1 L240.5,300 Z" fill="url(#estheticAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M243.5,300 L243.5,214.1 C243.5,203.1 247.5,200.1 261.5,200.1 C275.5,200.1 279.5,203.1 279.5,214.1 L279.5,300 Z" fill="url(#estheticAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M282.5,300 L282.5,221.9 C282.5,210.9 286.5,207.9 299.5,207.9 C312.5,207.9 316.5,210.9 316.5,221.9 L316.5,300 Z" fill="url(#estheticAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M319.5,300 L319.5,231.7 C319.5,220.7 323.5,217.7 334.5,217.7 C345.5,217.7 349.5,220.7 349.5,231.7 L349.5,300 Z" fill="url(#estheticAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M0,300 L0,276 Q27.0,296 55.0,276 Q71.5,296 88.0,276 Q106.5,296 125.0,276 Q144.5,296 164.0,276 Q183.5,296 203.0,276 Q222.5,296 242.0,276 Q261.5,296 281.0,276 Q299.5,296 318.0,276 Q334.5,296 351.0,276 Q379.0,296 407.0,276 L400,276 L400,300 Z" fill="url(#estheticAg)"/><path d="M9.5,58 L8.5,111.0 C7.5,166.0 14.7,172.0 25.5,172.0 C36.3,172.0 43.5,166.0 42.5,111.0 L41.5,58 Z" fill="url(#estheticAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="20.5" cy="110.5" rx="4.7" ry="25.4" fill="#fff" opacity=".85"/><path d="M48.5,58 L47.5,128.4 C46.5,171.0 60.6,190.0 68.5,194.0 C76.4,190.0 90.5,171.0 89.5,128.4 L88.5,58 Z" fill="url(#estheticAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="62.3" cy="119.8" rx="5.7" ry="30.7" fill="#fff" opacity=".85"/><path d="M95.5,58 L94.0,128.8 C93.5,176.0 97.1,184.0 107.0,184.0 L125.0,184.0 C134.9,184.0 138.5,176.0 138.0,128.8 L136.5,58 Z" fill="url(#estheticAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="109.7" cy="115.6" rx="5.9" ry="28.3" fill="#fff" opacity=".85"/><path d="M143.5,58 L142.0,140.8 C141.5,196.0 146.1,204.0 158.6,204.0 L181.4,204.0 C193.9,204.0 198.5,196.0 198.0,140.8 L196.5,58 Z" fill="url(#estheticAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="162.0" cy="124.0" rx="7.4" ry="33.1" fill="#fff" opacity=".85"/><path d="M203.5,58 L202.0,140.8 C201.5,196.0 206.1,204.0 218.6,204.0 L241.4,204.0 C253.9,204.0 258.5,196.0 258.0,140.8 L256.5,58 Z" fill="url(#estheticAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="222.0" cy="124.0" rx="7.4" ry="33.1" fill="#fff" opacity=".85"/><path d="M263.5,58 L262.0,128.8 C261.5,176.0 265.1,184.0 275.0,184.0 L293.0,184.0 C302.9,184.0 306.5,176.0 306.0,128.8 L304.5,58 Z" fill="url(#estheticAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="277.7" cy="115.6" rx="5.9" ry="28.3" fill="#fff" opacity=".85"/><path d="M311.5,58 L310.5,128.4 C309.5,171.0 323.6,190.0 331.5,194.0 C339.4,190.0 353.5,171.0 352.5,128.4 L351.5,58 Z" fill="url(#estheticAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="325.3" cy="119.8" rx="5.7" ry="30.7" fill="#fff" opacity=".85"/><path d="M358.5,58 L357.5,111.0 C356.5,166.0 363.7,172.0 374.5,172.0 C385.3,172.0 392.5,166.0 391.5,111.0 L390.5,58 Z" fill="url(#estheticAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="369.5" cy="110.5" rx="4.7" ry="25.4" fill="#fff" opacity=".85"/><path d="M0,0 L400,0 L400,76 L394.0,78 C388.2,60 360.8,60 355.0,78 L355.0,78 C348.2,60 314.8,60 308.0,78 L308.0,78 C301.1,60 266.9,60 260.0,78 L260.0,78 C251.7,60 208.3,60 200.0,78 L200.0,78 C191.7,60 148.3,60 140.0,78 L140.0,78 C133.1,60 98.9,60 92.0,78 L92.0,78 C85.2,60 51.8,60 45.0,78 L45.0,78 C39.2,60 11.8,60 6.0,78 L0,76 Z" fill="url(#estheticAg)"/><path d="M0,36 Q200.0,20 400,36" stroke="#fff" stroke-opacity=".22" stroke-width="10" fill="none" stroke-linecap="round"/></svg><span>После</span></div>
+          <div class="ba__before"><svg class="ba__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="estheticBm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B2433"/><stop offset="1" stop-color="#2A0F17"/></linearGradient><linearGradient id="estheticBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7B9C1"/><stop offset=".75" stop-color="#E98E9C"/><stop offset="1" stop-color="#DD7B8B"/></linearGradient><linearGradient id="estheticBe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3E6C8"/><stop offset="1" stop-color="#D9C397"/></linearGradient><linearGradient id="estheticBl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9C397"/><stop offset="1" stop-color="#F3E6C8"/></linearGradient></defs><rect width="400" height="300" fill="url(#estheticBm)"/><path d="M56.5,300 L56.5,231.7 C56.5,220.7 60.5,217.7 71.5,217.7 C82.5,217.7 86.5,220.7 86.5,231.7 L86.5,300 Z" fill="url(#estheticBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M89.5,300 L89.5,221.9 C89.5,210.9 93.5,207.9 106.5,207.9 C119.5,207.9 123.5,210.9 123.5,221.9 L123.5,300 Z" fill="url(#estheticBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M126.5,300 L126.5,214.1 C126.5,203.1 130.5,200.1 144.5,200.1 C158.5,200.1 162.5,203.1 162.5,214.1 L162.5,300 Z" fill="url(#estheticBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M165.5,300 L165.5,209.1 C165.5,198.1 169.5,195.1 183.5,195.1 C197.5,195.1 201.5,198.1 201.5,209.1 L201.5,300 Z" fill="url(#estheticBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M204.5,300 L204.5,209.1 C204.5,198.1 208.5,195.1 222.5,195.1 C236.5,195.1 240.5,198.1 240.5,209.1 L240.5,300 Z" fill="url(#estheticBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M243.5,300 L243.5,214.1 C243.5,203.1 247.5,200.1 261.5,200.1 C275.5,200.1 279.5,203.1 279.5,214.1 L279.5,300 Z" fill="url(#estheticBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M282.5,300 L282.5,221.9 C282.5,210.9 286.5,207.9 299.5,207.9 C312.5,207.9 316.5,210.9 316.5,221.9 L316.5,300 Z" fill="url(#estheticBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M319.5,300 L319.5,231.7 C319.5,220.7 323.5,217.7 334.5,217.7 C345.5,217.7 349.5,220.7 349.5,231.7 L349.5,300 Z" fill="url(#estheticBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M0,300 L0,276 Q27.0,296 55.0,276 Q71.5,296 88.0,276 Q106.5,296 125.0,276 Q144.5,296 164.0,276 Q183.5,296 203.0,276 Q222.5,296 242.0,276 Q261.5,296 281.0,276 Q299.5,296 318.0,276 Q334.5,296 351.0,276 Q379.0,296 407.0,276 L400,276 L400,300 Z" fill="url(#estheticBg)"/><path d="M6.0,58 L5.0,111.0 C4.0,166.0 11.2,172.0 22.0,172.0 C32.8,172.0 40.0,166.0 39.0,111.0 L38.0,58 Z" fill="url(#estheticBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="17.0" cy="110.5" rx="3.6" ry="19.1" fill="#fff" opacity=".35"/><path d="M45.0,58 L44.0,128.4 C43.0,171.0 57.1,190.0 65.0,194.0 C72.9,190.0 87.0,171.0 86.0,128.4 L85.0,58 Z" fill="url(#estheticBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="58.8" cy="119.8" rx="4.4" ry="23.0" fill="#fff" opacity=".35"/><path d="M92.0,58 L90.5,128.8 C90.0,176.0 93.6,184.0 103.5,184.0 L121.5,178.0 C131.4,178.0 135.0,170.0 134.5,128.8 L133.0,58 Z" fill="url(#estheticBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="106.2" cy="115.6" rx="4.5" ry="21.2" fill="#fff" opacity=".35"/><path d="M140.0,58 L138.5,140.8 C138.0,196.0 142.6,204.0 155.1,204.0 L177.9,195.0 C190.4,195.0 195.0,187.0 194.5,140.8 L193.0,58 Z" fill="#D8CBB0" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="158.5" cy="124.0" rx="5.7" ry="24.8" fill="#fff" opacity=".35"/><path d="M207.0,58 L205.5,140.8 C205.0,196.0 209.6,204.0 222.1,204.0 L244.9,200.0 C257.4,200.0 262.0,192.0 261.5,140.8 L260.0,58 Z" fill="url(#estheticBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="225.5" cy="124.0" rx="5.7" ry="24.8" fill="#fff" opacity=".35"/><path d="M267.0,58 L265.5,128.8 C265.0,176.0 268.6,184.0 278.5,184.0 L296.5,184.0 C306.4,184.0 310.0,176.0 309.5,128.8 L308.0,58 Z" fill="#E2CFA2" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="281.2" cy="115.6" rx="4.5" ry="21.2" fill="#fff" opacity=".35"/><path d="M315.0,58 L314.0,128.4 C313.0,171.0 327.1,190.0 335.0,194.0 C342.9,190.0 357.0,171.0 356.0,128.4 L355.0,58 Z" fill="url(#estheticBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="328.8" cy="119.8" rx="4.4" ry="23.0" fill="#fff" opacity=".35"/><path d="M362.0,58 L361.0,111.0 C360.0,166.0 367.2,172.0 378.0,172.0 C388.8,172.0 396.0,166.0 395.0,111.0 L394.0,58 Z" fill="url(#estheticBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="373.0" cy="110.5" rx="3.6" ry="19.1" fill="#fff" opacity=".35"/><path d="M0,0 L400,0 L400,76 L397.5,78 C391.7,60 364.3,60 358.5,78 L358.5,78 C351.7,60 318.3,60 311.5,78 L311.5,78 C304.6,60 270.4,60 263.5,78 L263.5,78 C255.2,60 211.8,60 203.5,78 L196.5,78 C188.2,60 144.8,60 136.5,78 L136.5,78 C129.6,60 95.4,60 88.5,78 L88.5,78 C81.7,60 48.3,60 41.5,78 L41.5,78 C35.7,60 8.3,60 2.5,78 L0,76 Z" fill="url(#estheticBg)"/><path d="M0,36 Q200.0,20 400,36" stroke="#fff" stroke-opacity=".22" stroke-width="10" fill="none" stroke-linecap="round"/></svg><span>До</span></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Сравнение до и после: керамические виниры">
+          <span class="ba__handle" aria-hidden="true"><span class="ba__knob"><svg class="ic"><use href="#i-arrow"/></svg><svg class="ic"><use href="#i-arrow"/></svg></span></span>
+        </div>
+        <figcaption><b>Виниры на 8 зубов</b><span>Керамика E.max · 2 визита</span></figcaption>
+      </figure>
+      <figure class="ba" data-cat="prosth">
+        <div class="ba__stage">
+          <div class="ba__after"><svg class="ba__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="prosthAm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B2433"/><stop offset="1" stop-color="#2A0F17"/></linearGradient><linearGradient id="prosthAg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7B9C1"/><stop offset=".75" stop-color="#E98E9C"/><stop offset="1" stop-color="#DD7B8B"/></linearGradient><linearGradient id="prosthAe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCEBF3"/></linearGradient><linearGradient id="prosthAl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCEBF3"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient></defs><rect width="400" height="300" fill="url(#prosthAm)"/><path d="M56.5,300 L56.5,231.7 C56.5,220.7 60.5,217.7 71.5,217.7 C82.5,217.7 86.5,220.7 86.5,231.7 L86.5,300 Z" fill="url(#prosthAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M89.5,300 L89.5,221.9 C89.5,210.9 93.5,207.9 106.5,207.9 C119.5,207.9 123.5,210.9 123.5,221.9 L123.5,300 Z" fill="url(#prosthAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M126.5,300 L126.5,214.1 C126.5,203.1 130.5,200.1 144.5,200.1 C158.5,200.1 162.5,203.1 162.5,214.1 L162.5,300 Z" fill="url(#prosthAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M165.5,300 L165.5,209.1 C165.5,198.1 169.5,195.1 183.5,195.1 C197.5,195.1 201.5,198.1 201.5,209.1 L201.5,300 Z" fill="url(#prosthAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M204.5,300 L204.5,209.1 C204.5,198.1 208.5,195.1 222.5,195.1 C236.5,195.1 240.5,198.1 240.5,209.1 L240.5,300 Z" fill="url(#prosthAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M243.5,300 L243.5,214.1 C243.5,203.1 247.5,200.1 261.5,200.1 C275.5,200.1 279.5,203.1 279.5,214.1 L279.5,300 Z" fill="url(#prosthAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M282.5,300 L282.5,221.9 C282.5,210.9 286.5,207.9 299.5,207.9 C312.5,207.9 316.5,210.9 316.5,221.9 L316.5,300 Z" fill="url(#prosthAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M319.5,300 L319.5,231.7 C319.5,220.7 323.5,217.7 334.5,217.7 C345.5,217.7 349.5,220.7 349.5,231.7 L349.5,300 Z" fill="url(#prosthAl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M0,300 L0,276 Q27.0,296 55.0,276 Q71.5,296 88.0,276 Q106.5,296 125.0,276 Q144.5,296 164.0,276 Q183.5,296 203.0,276 Q222.5,296 242.0,276 Q261.5,296 281.0,276 Q299.5,296 318.0,276 Q334.5,296 351.0,276 Q379.0,296 407.0,276 L400,276 L400,300 Z" fill="url(#prosthAg)"/><path d="M9.5,58 L8.5,111.0 C7.5,166.0 14.7,172.0 25.5,172.0 C36.3,172.0 43.5,166.0 42.5,111.0 L41.5,58 Z" fill="url(#prosthAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="20.5" cy="110.5" rx="4.7" ry="25.4" fill="#fff" opacity=".85"/><path d="M48.5,58 L47.5,128.4 C46.5,171.0 60.6,190.0 68.5,194.0 C76.4,190.0 90.5,171.0 89.5,128.4 L88.5,58 Z" fill="url(#prosthAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="62.3" cy="119.8" rx="5.7" ry="30.7" fill="#fff" opacity=".85"/><path d="M95.5,58 L94.0,128.8 C93.5,176.0 97.1,184.0 107.0,184.0 L125.0,184.0 C134.9,184.0 138.5,176.0 138.0,128.8 L136.5,58 Z" fill="url(#prosthAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="109.7" cy="115.6" rx="5.9" ry="28.3" fill="#fff" opacity=".85"/><path d="M143.5,58 L142.0,140.8 C141.5,196.0 146.1,204.0 158.6,204.0 L181.4,204.0 C193.9,204.0 198.5,196.0 198.0,140.8 L196.5,58 Z" fill="url(#prosthAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="162.0" cy="124.0" rx="7.4" ry="33.1" fill="#fff" opacity=".85"/><path d="M203.5,58 L202.0,140.8 C201.5,196.0 206.1,204.0 218.6,204.0 L241.4,204.0 C253.9,204.0 258.5,196.0 258.0,140.8 L256.5,58 Z" fill="url(#prosthAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="222.0" cy="124.0" rx="7.4" ry="33.1" fill="#fff" opacity=".85"/><path d="M263.5,58 L262.0,128.8 C261.5,176.0 265.1,184.0 275.0,184.0 L293.0,184.0 C302.9,184.0 306.5,176.0 306.0,128.8 L304.5,58 Z" fill="url(#prosthAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="277.7" cy="115.6" rx="5.9" ry="28.3" fill="#fff" opacity=".85"/><path d="M311.5,58 L310.5,128.4 C309.5,171.0 323.6,190.0 331.5,194.0 C339.4,190.0 353.5,171.0 352.5,128.4 L351.5,58 Z" fill="url(#prosthAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="325.3" cy="119.8" rx="5.7" ry="30.7" fill="#fff" opacity=".85"/><path d="M358.5,58 L357.5,111.0 C356.5,166.0 363.7,172.0 374.5,172.0 C385.3,172.0 392.5,166.0 391.5,111.0 L390.5,58 Z" fill="url(#prosthAe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="369.5" cy="110.5" rx="4.7" ry="25.4" fill="#fff" opacity=".85"/><path d="M0,0 L400,0 L400,76 L394.0,78 C388.2,60 360.8,60 355.0,78 L355.0,78 C348.2,60 314.8,60 308.0,78 L308.0,78 C301.1,60 266.9,60 260.0,78 L260.0,78 C251.7,60 208.3,60 200.0,78 L200.0,78 C191.7,60 148.3,60 140.0,78 L140.0,78 C133.1,60 98.9,60 92.0,78 L92.0,78 C85.2,60 51.8,60 45.0,78 L45.0,78 C39.2,60 11.8,60 6.0,78 L0,76 Z" fill="url(#prosthAg)"/><path d="M0,36 Q200.0,20 400,36" stroke="#fff" stroke-opacity=".22" stroke-width="10" fill="none" stroke-linecap="round"/></svg><span>После</span></div>
+          <div class="ba__before"><svg class="ba__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="prosthBm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B2433"/><stop offset="1" stop-color="#2A0F17"/></linearGradient><linearGradient id="prosthBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7B9C1"/><stop offset=".75" stop-color="#E98E9C"/><stop offset="1" stop-color="#DD7B8B"/></linearGradient><linearGradient id="prosthBe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3E6C8"/><stop offset="1" stop-color="#D9C397"/></linearGradient><linearGradient id="prosthBl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9C397"/><stop offset="1" stop-color="#F3E6C8"/></linearGradient></defs><rect width="400" height="300" fill="url(#prosthBm)"/><path d="M56.5,300 L56.5,231.7 C56.5,220.7 60.5,217.7 71.5,217.7 C82.5,217.7 86.5,220.7 86.5,231.7 L86.5,300 Z" fill="url(#prosthBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M89.5,300 L89.5,221.9 C89.5,210.9 93.5,207.9 106.5,207.9 C119.5,207.9 123.5,210.9 123.5,221.9 L123.5,300 Z" fill="url(#prosthBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M126.5,300 L126.5,214.1 C126.5,203.1 130.5,200.1 144.5,200.1 C158.5,200.1 162.5,203.1 162.5,214.1 L162.5,300 Z" fill="url(#prosthBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M165.5,300 L165.5,209.1 C165.5,198.1 169.5,195.1 183.5,195.1 C197.5,195.1 201.5,198.1 201.5,209.1 L201.5,300 Z" fill="url(#prosthBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M204.5,300 L204.5,209.1 C204.5,198.1 208.5,195.1 222.5,195.1 C236.5,195.1 240.5,198.1 240.5,209.1 L240.5,300 Z" fill="url(#prosthBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M243.5,300 L243.5,214.1 C243.5,203.1 247.5,200.1 261.5,200.1 C275.5,200.1 279.5,203.1 279.5,214.1 L279.5,300 Z" fill="url(#prosthBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M282.5,300 L282.5,221.9 C282.5,210.9 286.5,207.9 299.5,207.9 C312.5,207.9 316.5,210.9 316.5,221.9 L316.5,300 Z" fill="url(#prosthBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M319.5,300 L319.5,231.7 C319.5,220.7 323.5,217.7 334.5,217.7 C345.5,217.7 349.5,220.7 349.5,231.7 L349.5,300 Z" fill="url(#prosthBl)" stroke="rgba(60,20,30,.25)" stroke-width="1"/><path d="M0,300 L0,276 Q27.0,296 55.0,276 Q71.5,296 88.0,276 Q106.5,296 125.0,276 Q144.5,296 164.0,276 Q183.5,296 203.0,276 Q222.5,296 242.0,276 Q261.5,296 281.0,276 Q299.5,296 318.0,276 Q334.5,296 351.0,276 Q379.0,296 407.0,276 L400,276 L400,300 Z" fill="url(#prosthBg)"/><path d="M9.5,58 L8.5,111.0 C7.5,166.0 14.7,172.0 25.5,172.0 C36.3,172.0 43.5,166.0 42.5,111.0 L41.5,58 Z" fill="url(#prosthBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="20.5" cy="110.5" rx="3.6" ry="19.1" fill="#fff" opacity=".35"/><path d="M143.5,58 L142.0,140.8 C141.5,196.0 146.1,204.0 158.6,204.0 L181.4,204.0 C193.9,204.0 198.5,196.0 198.0,140.8 L196.5,58 Z" fill="url(#prosthBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="162.0" cy="124.0" rx="5.7" ry="24.8" fill="#fff" opacity=".35"/><path d="M203.5,58 L202.0,140.8 C201.5,196.0 206.1,204.0 218.6,204.0 L241.4,204.0 C253.9,204.0 258.5,196.0 258.0,140.8 L256.5,58 Z" fill="url(#prosthBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="222.0" cy="124.0" rx="5.7" ry="24.8" fill="#fff" opacity=".35"/><path d="M263.5,58 L262.0,128.8 C261.5,176.0 265.1,184.0 275.0,184.0 L293.0,184.0 C302.9,184.0 306.5,176.0 306.0,128.8 L304.5,58 Z" fill="#E9E2D2" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="277.7" cy="115.6" rx="4.5" ry="21.2" fill="#fff" opacity=".35"/><path d="M264.5,75 Q284.0,82 303.5,75" stroke="#55505A" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/><path d="M311.5,58 L310.5,128.4 C309.5,171.0 323.6,190.0 331.5,194.0 C339.4,190.0 353.5,171.0 352.5,128.4 L351.5,58 Z" fill="url(#prosthBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="325.3" cy="119.8" rx="4.4" ry="23.0" fill="#fff" opacity=".35"/><path d="M358.5,58 L357.5,111.0 C356.5,166.0 363.7,172.0 374.5,172.0 C385.3,172.0 392.5,166.0 391.5,111.0 L390.5,58 Z" fill="url(#prosthBe)" stroke="rgba(60,20,30,.28)" stroke-width="1"/><ellipse cx="369.5" cy="110.5" rx="3.6" ry="19.1" fill="#fff" opacity=".35"/><path d="M0,0 L400,0 L400,76 L394.0,78 C388.2,60 360.8,60 355.0,78 L355.0,78 C348.2,60 314.8,60 308.0,78 L308.0,78 C301.1,60 266.9,60 260.0,78 L260.0,78 C251.7,60 208.3,60 200.0,78 L200.0,78 C191.7,60 148.3,60 140.0,78 L140.0,78 C138.5,96 93.5,96 92.0,78 L92.0,78 C90.5,96 46.5,96 45.0,78 L45.0,78 C39.2,60 11.8,60 6.0,78 L0,76 Z" fill="url(#prosthBg)"/><path d="M0,36 Q200.0,20 400,36" stroke="#fff" stroke-opacity=".22" stroke-width="10" fill="none" stroke-linecap="round"/></svg><span>До</span></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Сравнение до и после: протезирование">
+          <span class="ba__handle" aria-hidden="true"><span class="ba__knob"><svg class="ic"><use href="#i-arrow"/></svg><svg class="ic"><use href="#i-arrow"/></svg></span></span>
+        </div>
+        <figcaption><b>Мост на имплантах</b><span>Замена старой коронки · 4 месяца</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="sec process">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>Как проходит лечение</h2>
+      <p>Понятный путь без сюрпризов — вы всегда знаете, что дальше и сколько это стоит.</p>
+    </header>
+    <ol class="proc">
+      <li><span class="proc__n">1</span><h3>Консультация</h3><p>Осмотр, знакомство, обсуждаем жалобы и цель.</p></li>
+      <li><span class="proc__n">2</span><h3>Диагностика</h3><p>Снимок или КТ на своём оборудовании.</p></li>
+      <li><span class="proc__n">3</span><h3>План и смета</h3><p>Прозрачный план и фиксированная стоимость до начала.</p></li>
+      <li><span class="proc__n">4</span><h3>Лечение</h3><p>Бережно и без боли, в комфортном темпе.</p></li>
+      <li><span class="proc__n">5</span><h3>Контроль</h3><p>Бесплатный осмотр через полгода и рекомендации.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== SAFETY / NO PAIN ===== -->
+<section class="sec safety">
+  <div class="wrap safety__in">
+    <div class="safety__copy reveal">
+      <h2>Лечение без боли и стресса</h2>
+      <p>Мы знаем, что многие боятся стоматолога. Поэтому работаем бережно: подбираем комфортную анестезию, объясняем каждый шаг и никуда не торопим.</p>
+      <ul class="ticks">
+        <li><svg class="ic"><use href="#i-check"/></svg> Анестезия, подобранная под вас</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Спокойная атмосфера, без осуждения</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Отдельный подход к детям</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Стерильность и одноразовые материалы</li>
+      </ul>
+    </div>
+    <div class="safety__media reveal">
+      <picture>
+        <source type="image/webp" srcset="assets/img/cabinet-900.webp">
+        <img src="assets/img/cabinet.jpg" alt="Лечебный кабинет — фотография намеренно размыта" width="960" height="1280" loading="lazy" decoding="async">
+      </picture>
+      <span class="veil" aria-hidden="true"></span>
+      <span class="nda"><svg class="ic"><use href="#i-eye-off"/></svg> Фото скрыто · демо</span>
+      <ul class="facts">
+        <li><svg class="ic"><use href="#i-autoclave"/></svg><div><b>Автоклав класса B</b><span>Инструменты в крафт-пакетах вскрываем при вас</span></div></li>
+        <li><svg class="ic"><use href="#i-drop"/></svg><div><b>Карпульная анестезия</b><span>Тонкие иглы и аппликационное обезболивание</span></div></li>
+        <li><svg class="ic"><use href="#i-shield"/></svg><div><b>Одноразовые наборы</b><span>Для каждого пациента — новый</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICES ===== -->
+<section class="sec" id="prices">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>Стоимость лечения</h2>
+      <p>Ниже — ориентиры. Точную цену врач назовёт после осмотра и закрепит в смете — без скрытых доплат.</p>
+    </header>
+    <div class="price-card">
+      <table class="price">
+        <caption class="sr-only">Ориентировочные цены на услуги</caption>
+        <tbody>
+          <tr><th scope="row">Консультация и план лечения<span>осмотр, снимок, смета</span></th><td class="price__v"><b>1 000</b> ₽</td></tr>
+          <tr><th scope="row">Профессиональная гигиена<span>ультразвук, Air Flow, полировка</span></th><td class="price__v"><b>4 500</b> ₽</td></tr>
+          <tr><th scope="row">Лечение кариеса<span>с анестезией и пломбой</span></th><td class="price__v">от <b>5 500</b> ₽</td></tr>
+          <tr><th scope="row">Лечение каналов<span>под микроскопом, за канал</span></th><td class="price__v">от <b>7 000</b> ₽</td></tr>
+          <tr><th scope="row">Коронка из диоксида циркония</th><td class="price__v">от <b>18 000</b> ₽</td></tr>
+          <tr><th scope="row">Имплантация<span>имплант под ключ, без коронки</span></th><td class="price__v">от <b>35 000</b> ₽</td></tr>
+          <tr><th scope="row">Брекеты / элайнеры</th><td class="price__v">от <b>60 000</b> ₽</td></tr>
+        </tbody>
+      </table>
+      <div class="price__foot">
+        <p><svg class="ic"><use href="#i-info"/></svg> Рассрочка 0% до 12 месяцев на лечение от 30 000 ₽</p>
+        <a class="btn btn--ghost" href="#booking">Узнать точную стоимость</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews__head">
+      <div>
+        <h2>Нам доверяют</h2>
+        <p>Что пациенты пишут после лечения.</p>
+      </div>
+      <div class="rating">
+        <b>4.9</b>
+        <span class="rating__stars" aria-hidden="true">
+          <svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg>
+        </span>
+        <span class="rating__src">средняя оценка · 214 отзывов</span>
+      </div>
+    </div>
+    <div class="revs">
+      <blockquote class="rev">
+        <div class="rev__stars" aria-label="5 из 5"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+        <p>«Не ходила к стоматологу лет десять — боялась. Здесь впервые не было больно: врач объясняла каждый шаг. Вылечили три зуба за два визита.»</p>
+        <footer><cite>Екатерина М.</cite><span>Лечение кариеса</span></footer>
+      </blockquote>
+      <blockquote class="rev rev--lift">
+        <div class="rev__stars" aria-label="5 из 5"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+        <p>«Ставил два импланта. Сначала КТ, потом план и смета — итоговая сумма не изменилась ни на рубль. Через три месяца уже ел нормально.»</p>
+        <footer><cite>Дмитрий К.</cite><span>Имплантация</span></footer>
+      </blockquote>
+      <blockquote class="rev">
+        <div class="rev__stars" aria-label="5 из 5"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+        <p>«Водим сюда обоих детей. Младший теперь сам просится „посчитать зубики“ — для нас это маленькое чудо.»</p>
+        <footer><cite>Наталья В.</cite><span>Детский приём</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec faq">
+  <div class="wrap faq__in">
+    <header class="sec__head sec__head--left">
+      <h2>Частые вопросы</h2>
+      <p>Не нашли ответ? Оставьте заявку — администратор перезвонит и подскажет.</p>
+      <a class="btn btn--ghost faq__cta" href="#booking">Задать вопрос</a>
+    </header>
+    <div class="acc" id="acc">
+      <details class="acc__i"><summary>Это больно?<svg class="ic acc__ic"><use href="#i-plus"/></svg></summary><div class="acc__b"><p>Современная анестезия делает лечение комфортным. Сначала — аппликационный гель, потом укол тонкой иглой, которого почти не чувствуешь. Мы всегда спрашиваем о самочувствии и делаем паузы.</p></div></details>
+      <details class="acc__i"><summary>Сколько будет стоить лечение?<svg class="ic acc__ic"><use href="#i-plus"/></svg></summary><div class="acc__b"><p>Стоимость зависит от диагноза. Точную цену врач называет после осмотра и фиксирует в смете до начала работ — без скрытых доплат.</p></div></details>
+      <details class="acc__i"><summary>Даёте ли гарантию?<svg class="ic acc__ic"><use href="#i-plus"/></svg></summary><div class="acc__b"><p>Да. На пломбы — 2 года, на коронки и виниры — 5 лет, на импланты — пожизненная гарантия производителя. Условия прописаны в договоре.</p></div></details>
+      <details class="acc__i"><summary>Можно ли в рассрочку?<svg class="ic acc__ic"><use href="#i-plus"/></svg></summary><div class="acc__b"><p>Да, на лечение от 30 000 ₽ — рассрочка 0% до 12 месяцев без переплат. Оформление занимает 15 минут прямо в клинике.</p></div></details>
+      <details class="acc__i"><summary>С какого возраста лечите детей?<svg class="ic acc__ic"><use href="#i-plus"/></svg></summary><div class="acc__b"><p>Принимаем детей с 2 лет. Первый визит — знакомство: ребёнок осматривается, трогает инструменты и уходит с подарком, а не со слезами.</p></div></details>
+      <details class="acc__i"><summary>Сколько служат импланты?<svg class="ic acc__ic"><use href="#i-plus"/></svg></summary><div class="acc__b"><p>При правильном уходе и регулярной гигиене импланты служат десятилетия. На консультации врач оценит вашу ситуацию по КТ и подберёт решение.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOKING ===== -->
+<section class="sec booking" id="booking">
+  <div class="wrap booking__card reveal">
+    <div class="booking__copy">
+      <h2>Запишитесь на консультацию</h2>
+      <p>Оставьте контакты — администратор перезвонит в течение 15 минут, подберёт удобное время и ответит на вопросы.</p>
+      <ul class="booking__perks">
+        <li><svg class="ic"><use href="#i-check"/></svg> Осмотр и план лечения — 1 000 ₽</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Смета до начала лечения</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Можно с детьми — есть игровой уголок</li>
+      </ul>
+      <div class="booking__msgr">
+        <a class="msgr msgr--wa" href="#booking" data-demo="WhatsApp"><svg class="ic"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+        <a class="msgr msgr--tg" href="#booking" data-demo="Telegram"><svg class="ic"><use href="#i-telegram"/></svg> Telegram</a>
+        <a class="msgr msgr--call" href="#booking" data-demo="звонок"><svg class="ic"><use href="#i-phone"/></svg> Позвонить</a>
+      </div>
+    </div>
+    <form class="booking__form" id="bookForm" novalidate>
+      <div class="fld"><label class="fld__l" for="bName">Имя</label><input id="bName" type="text" name="name" placeholder="Как к вам обращаться" required autocomplete="name"><span class="fld__err" role="alert">Укажите имя</span></div>
+      <div class="fld"><label class="fld__l" for="bPhone">Телефон</label><input id="bPhone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required inputmode="tel" autocomplete="tel" data-phone><span class="fld__err" role="alert">Введите номер полностью — 10 цифр после +7</span></div>
+      <div class="fld">
+        <label class="fld__l" for="bService">Услуга</label>
+        <select id="bService" name="service" required>
+          <option value="" disabled selected>Выберите направление</option>
+          <option>Консультация</option>
+          <option>Лечение зубов</option>
+          <option>Имплантация</option>
+          <option>Протезирование</option>
+          <option>Брекеты / элайнеры</option>
+          <option>Виниры / эстетика</option>
+          <option>Детский приём</option>
+        </select>
+        <span class="fld__err" role="alert">Выберите услугу</span>
+      </div>
+      <button type="submit" class="btn btn--lg btn--block">Записаться</button>
+      <label class="consent"><input type="checkbox" required> <span>Я согласен на обработку персональных данных и принимаю <a href="#" data-demo="политика конфиденциальности">политику конфиденциальности</a></span></label>
+      <p class="med-note">Имеются противопоказания. Необходима консультация специалиста.</p>
+      <div class="booking__done" id="bookDone" hidden>
+        <div class="quiz__done-ic"><svg class="ic"><use href="#i-check"/></svg></div>
+        <b>Заявка отправлена!</b>
+        <p>Мы перезвоним в течение 15 минут в рабочее время.</p>
+        <p class="demo-hint"><svg class="ic"><use href="#i-info"/></svg> Демо-версия: данные никуда не отправляются.</p>
+        <button type="button" class="btn btn--ghost btn--sm" id="bookAgain">Отправить ещё одну</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== CONTACTS ===== -->
+<section class="sec contacts" id="contacts">
+  <div class="wrap contacts__in">
+    <div class="contacts__info">
+      <h2>Как нас найти</h2>
+      <ul class="cinfo">
+        <li><svg class="ic"><use href="#i-pin"/></svg><div><b>Адрес</b>ул. Садовая, 24 · своё здание, бесплатная парковка</div></li>
+        <li><svg class="ic"><use href="#i-clock"/></svg><div><b>Часы работы</b>Пн–Сб: 09:00–20:00 · Вс: 10:00–16:00</div></li>
+        <li><svg class="ic"><use href="#i-phone"/></svg><div><b>Телефон</b><a href="#booking" data-demo="звонок">+7 (800) 000-00-00</a></div></li>
+      </ul>
+      <div class="contacts__msgr">
+        <a class="msgr msgr--wa" href="#booking" data-demo="WhatsApp"><svg class="ic"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+        <a class="msgr msgr--tg" href="#booking" data-demo="Telegram"><svg class="ic"><use href="#i-telegram"/></svg> Telegram</a>
+      </div>
+    </div>
+    <a class="contacts__map" href="#contacts" data-demo="карты" aria-label="Открыть на карте">
+      <svg class="map" viewBox="0 0 640 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <rect width="640" height="420" fill="#EAF4F9"/>
+        <path d="M-20 300C80 270 150 330 250 300S420 220 520 250 640 230 680 210" fill="none" stroke="#BFE3F3" stroke-width="34" stroke-linecap="round"/>
+        <path d="M-20 300C80 270 150 330 250 300S420 220 520 250 640 230 680 210" fill="none" stroke="#D6EEF8" stroke-width="20" stroke-linecap="round"/>
+        <g fill="#fff">
+          <rect x="24" y="26" width="118" height="84" rx="10"/><rect x="162" y="26" width="96" height="84" rx="10"/><rect x="278" y="26" width="140" height="84" rx="10"/><rect x="438" y="26" width="180" height="84" rx="10"/>
+          <rect x="24" y="130" width="118" height="100" rx="10"/><rect x="438" y="130" width="84" height="80" rx="10"/><rect x="540" y="130" width="78" height="80" rx="10"/>
+          <rect x="24" y="340" width="150" height="70" rx="10"/><rect x="300" y="330" width="120" height="80" rx="10"/><rect x="440" y="300" width="178" height="110" rx="10"/>
+        </g>
+        <path d="M162 130h256v96H162z" fill="#DFF0D3"/>
+        <g fill="#C8E6B4"><circle cx="196" cy="160" r="14"/><circle cx="232" cy="190" r="18"/><circle cx="380" cy="160" r="16"/><circle cx="350" cy="200" r="11"/></g>
+        <path d="M290 150c20 6 30 22 26 44" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 9"/>
+        <g fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"><path d="M0 120h640M152 0v420M428 0v420M0 240h420"/></g>
+        <rect x="328" y="112" width="34" height="16" rx="4" fill="#0B6E9F" opacity=".9"/>
+        <text x="345" y="124" text-anchor="middle" font-size="10" font-weight="700" fill="#fff" font-family="Golos Text, sans-serif">24</text>
+      </svg>
+      <span class="map__pin"><svg viewBox="0 0 120 132" aria-hidden="true"><use href="#logo"/></svg></span>
+      <span class="map-cta">Открыть на карте <svg class="ic"><use href="#i-arrow"/></svg></span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="ft">
+  <div class="wrap ft__in">
+    <div class="ft__col ft__brand">
+      <span class="ft__logo" role="img" aria-label="Клиника Здоровье">
+        <svg viewBox="0 0 120 132" aria-hidden="true"><use href="#logo"/></svg>
+        <span aria-hidden="true"><small>клиника</small>Здоровье</span>
+      </span>
+      <p>Семейная стоматология полного цикла. Заботимся о здоровье и улыбках вашей семьи с 2014 года.</p>
+    </div>
+    <nav class="ft__col" aria-label="Разделы">
+      <b>Разделы</b>
+      <a href="#services">Услуги</a>
+      <a href="#implant">Имплантация</a>
+      <a href="#doctors">Врачи</a>
+      <a href="#prices">Цены</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="ft__col">
+      <b>Контакты</b>
+      <a href="#booking" data-demo="звонок">+7 (800) 000-00-00</a>
+      <span>ул. Садовая, 24</span>
+      <span>Пн–Сб 09–20 · Вс 10–16</span>
+    </div>
+  </div>
+  <div class="wrap ft__legal">
+    <p class="med-note med-note--ft">Имеются противопоказания. Необходима консультация специалиста. Не является публичной офертой.</p>
+    <p class="ft__demo"><svg class="ic"><use href="#i-info"/></svg> Концепт-проект для портфолио. Клиника, врачи, цены и отзывы вымышлены; фотографии намеренно размыты; формы и внешние ссылки отключены.</p>
+    <p class="ft__cc">© 2026 «Клиника Здоровье» · демо-версия · <a href="#" data-demo="политика конфиденциальности">Политика конфиденциальности</a></p>
+  </div>
+</footer>
+
+<!-- ===== MOBILE STICKY BAR ===== -->
+<div class="mbar">
+  <a href="#booking" data-demo="звонок" class="mbar__b"><svg class="ic"><use href="#i-phone"/></svg><span>Позвонить</span></a>
+  <a href="#booking" data-demo="WhatsApp" class="mbar__b mbar__b--wa"><svg class="ic"><use href="#i-whatsapp"/></svg><span>WhatsApp</span></a>
+  <a href="#booking" class="mbar__b mbar__b--cta"><svg class="ic"><use href="#i-smile"/></svg><span>Записаться</span></a>
+</div>
+
+<!-- демо-уведомление: вместо перехода на внешние сервисы -->
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+  <svg class="ic"><use href="#i-info"/></svg>
+  <span id="toastText"></span>
+</div>
+
+<script src="js/main.js?v=5" defer></script>
+</body>
+</html>

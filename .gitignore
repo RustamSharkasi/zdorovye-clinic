@@ -1,0 +1,14 @@
+# Инструменты и билд-артефакты (не часть сайта)
+.claude/
+.impeccable/
+
+# OS / редакторы
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Зависимости / сборка (на будущее)
+node_modules/
+dist/
+.cache/
